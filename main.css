@@ -1,0 +1,225 @@
+/*Items I'm Struggling With:
+1. Creating buttons
+2. Rollover State for search bar
+3. Search Bar Formatting
+4. Top Alignment for Grid Icon
+;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer's Browser reset */
+
+* { 
+  /* outline: 1px solid black; */
+}
+#wrapper {
+    margin: auto;
+    width: 100%;
+    display: block;
+    overflow: auto;
+    font-family: arial, sans-serif;
+}
+#top-nav {
+	margin: auto; 
+	display:block;
+	text-align:right;
+	top:0;
+	right:0;
+	position:fixed;
+	line-height: 40px;
+	width:100%;
+	padding:10px;
+}
+#top-nav a {
+	padding:10px;
+	vertical-align: middle;
+	color: #404040;
+	text-decoration: none;
+}
+#top-nav a:hover {
+	vertical-align: middle;
+	color: #404040;
+	text-decoration: underline;
+}
+.top-right-link {
+	font-size: 12px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.grid {
+	position:relative;
+	height: 25px;
+	color: black;
+	vertical-align: middle;
+	opacity:0.75;
+}
+.grid:hover {
+	opacity:1;
+}
+.signin {
+ 	padding: 0 2px 1px 15px;
+ 	background: #fff;
+ 	color: #c00;
+ 	text-decoration:
+}
+#top-nav button {
+	padding: 8px 12px;
+	border: 1px solid #4285f4;
+	background-color: #4285f4;
+	margin: 0 5px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 13px;
+	border-radius:2px;
+}
+#top-nav button:hover {
+	box-shadow: 1px 1px #888888;
+}
+#logo {
+	display:block;
+	text-align: center;
+	vertical-align: middle;
+	padding-top:250px;
+	padding-bottom:25px;
+
+}
+#search-bar {
+	max-width: 570px;
+	margin: 0 auto;
+	position:relative;
+}
+#search-bar input {
+	display: block;
+	height: 30px;
+	width: 570px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px #d8d8d8 solid;
+	background: #fff;
+	background-size: 25px 25px;
+} 
+#search-bar input:hover {
+	border: 1px #4D4D4D solid;
+}
+#search-bar input:focus {
+	border: 1px #4285f4 solid;
+	outline-width:0px;
+}
+#search-bar form img {
+	position: absolute;
+	top: 3px;
+	right: -3px;
+	width: 25px;
+	opacity:.75;
+}
+#search-bar form img:hover {
+	opacity:1;
+}
+#search-buttons {
+	display:block;
+	text-align: center;
+	padding:20px;
+}
+#search-buttons button {
+	padding: 8px 12px;
+	border: 1px solid #CCC;
+	margin: 0 5px;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: #F2F2F2;
+	border: 1px solid #C6C6C6;
+	border-radius: 2px;
+}
+#search-buttons button:hover {
+	box-shadow: 1px 1px #888888;
+}
+#footer {
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	line-height: 40px;
+	max-height: 40px;
+	width:100%;
+	min-width: 980px;
+	display:inline-block;
+	bottom:0;
+	position:fixed;
+	padding:10px;
+	font-size:14px;
+}
+#footer ul li {
+	display:inline-block;
+	margin: 0px 10px
+}
+#footer-right {
+	display:inline-block;
+	float:right;
+	padding-right: 20px;
+}
+#footer-left {
+	display: inline-block;
+	padding-left: 20px;
+}
+.footer-right {
+	position:relative;
+	line-height: 40px;
+	text-decoration:none;
+	color:#666;
+	right:0;
+}
+.footer-right:hover {
+	text-decoration:underline;
+}
+.footer-left {
+	position:relative;
+	line-height: 40px;
+	text-decoration:none;
+	color:#666;
+}
+.footer-left:hover {
+	text-decoration:underline;
+}
